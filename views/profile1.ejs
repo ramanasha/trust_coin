@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <title>Node Authentication</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <style>
+        /*body         { padding-top:80px; word-wrap:break-word; }*/
+        div {
+            width: 500px;
+            padding: 10px;
+            border: 10px solid gray;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<!-- <div class="container">
+
+    <div class="page-header text-center"> -->
+      <center>  <h1></span> User Details</h1></center>
+
+    <!-- </div> -->
+
+
+
+      <% if (typeof usersArray !== 'undefined' && usersArray.length > 0) {%>
+
+        <%for (var i = 0; i < usersArray.length; i++) { %>
+
+          <div>
+            1.<b>User ID:</b> <%= usersArray[i]._id%><br>
+            2.<b>User Name:</b><%= usersArray[i].user_name%><br>
+            3.<b>User NIC:</b><%= usersArray[i].uer_nic %><br>
+            4.<b>User Address:</b><%= usersArray[i].user_address %><br>
+            5.<b>User WorkExperience:</b><%= usersArray[i].user_WorkExperience %><br>
+            6.<b>User Phone:</b><%= usersArray[i].user_phone%><br>
+            7.<b>User Age:</b><%= usersArray[i].user_age%><br>
+            8.<b>User Bio:</b><%= usersArray[i].user_bio%><br>
+           9.<b>User Jop:</b><%= usersArray[i].user_job%><br>
+        <center><button type="button"> apply </button></center>
+        </div>
+
+        <%}%>
+      <% } %>
+
+  </div>
+
+
+      <!-- <h3>My users IDs are: </h3>
+      <div class="row"> <% if (typeof usersArray !== 'undefined' && usersArray.length > 0) {%>
+       <%for (var i = 0; i < usersArray.length; i++) { %>
+       <div class="col-md-4"> ID: <%= usersArray[i]._id %>
+       Name: <%= usersArray[i]. username%>
+       District: <%= usersArray[i].country %>
+      Email: <%= usersArray[i].email %></div><br>
+        <%}%> <% } %>
+     </div>
+ -->
+
+</body>
+</html>
